@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Bastuvärd - Introduktion</title>
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body id="course-interface">
+    <div id="course-header">
+      <a href="../saunaportal.html">Avsluta kurs</a>
+      <img src="../assets/logos/sauna portal.png">
+    </div>
+  
+    <div id="course-area">
+        <div id="step1" class="course-step active">
+          <h2>Välkommen till denna kurs!</h2>
+          <p>I denna kurs kommer vi lära oss mycket
+            och det handlar om att bli duktig, det är det viktigaste.
+          </p>
+          <a href="#" onclick="triggerNextStep();">Klicka här för att börja</a>
+        </div>
+
+        <div id="step2" class="course-step">
+          <h2>Steg 2!</h2>
+          <p>I denna kurs kommer vi lära oss mycket
+            och det handlar om att bli duktig, det är det viktigaste.
+          </p>
+          <a href="#" onclick="triggerNextStep();">Klicka här för att börja</a>
+        </div>
+
+        <div id="step3" class="course-step">
+          <h2>Välkommen till Steg 3</h2>
+          <p>I denna kurs kommer vi lära oss mycket
+            och det handlar om att bli duktig, det är det viktigaste.
+          </p>
+          <a href="#" onclick="triggerNextStep();">Klicka här för att börja</a>
+        </div>
+    </div>
+    <div id="course-navigation">
+      <a id="back-button" class="">
+        <img src="assets/back.ico">
+      </a>
+      <a id="forward-button" class="enable">
+        <img src="assets/forward.png">
+      </a>
+    </div>
+
+	<script src="bastuvard-introduktion.js"></script>
+  </body>
+</html>

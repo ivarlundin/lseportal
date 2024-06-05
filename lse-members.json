@@ -1,0 +1,86 @@
+[
+    {
+        "username": "peperipaperika",
+        "password": "1234",
+        "fullname": "Ivar Lundin",
+        "avatarId": "04",
+        "rank": "Sauna-lord"
+    },
+    {
+        "username": "superoul",
+        "password": "1234",
+        "fullname": "Martin Lundin",
+        "avatarId": "05",
+        "rank": "Imperial gusster"
+    },
+    {
+        "username": "lundout",
+        "password": "1234",
+        "fullname": "Victor Lundin",
+        "avatarId": "06",
+        "rank": "Knight of the guss"
+    },
+    {
+        "username": "ozzypop",
+        "password": "1234",
+        "fullname": "Oscar Lundin",
+        "avatarId": "07",
+        "rank": "Ranger"
+    },
+    {
+        "username": "genelectwins",
+        "password": "1234",
+        "fullname": "Anton Lundin",
+        "avatarId": "08",
+        "rank": "TurboGuss"
+    },
+    {
+        "username": "ingelstone",
+        "password": "1234",
+        "fullname": "Olof Ingelsten",
+        "avatarId": "09",
+        "rank": "Intermediate"
+    },
+    {
+        "username": "teajutestrom",
+        "password": "1234",
+        "fullname": "Tea Juteström",
+        "avatarId": "10",
+        "rank": "Explorer"
+    },
+    {
+        "username": "red-doodle-vh",
+        "password": "1234",
+        "fullname": "Knut Lundin Juteström",
+        "avatarId": "11",
+        "rank": "No rank"
+    },
+    {
+        "username": "g-lundin",
+        "password": "1234",
+        "fullname": "Gunnar Lundin",
+        "avatarId": "12",
+        "rank": "Property Manager"
+    },
+    {
+        "username": "Claudia",
+        "password": "1234",
+        "fullname": "Claudia ?",
+        "avatarId": "13",
+        "rank": "NaN"
+    },
+    {
+        "username": "robin",
+        "password": "1234",
+        "fullname": "Robin R*****",
+        "avatarId": "14",
+        "rank": "Mingler"
+    },
+    {
+        "username": "lennartsson-chick",
+        "password": "1234",
+        "fullname": "Random lennartsson chick",
+        "avatarId": "15",
+        "rank": "Established"
+    }
+]

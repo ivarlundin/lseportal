@@ -1,0 +1,5 @@
+[
+    { "name": "Första kursen", "index": "course1", "id": 1 },
+    { "name": "Andra kursen", "index": "course2", "id": 2  },
+    { "name": "Tredje kursen (NY)", "index": "course3", "id": 3  }
+]
