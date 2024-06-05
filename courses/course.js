@@ -119,5 +119,24 @@ function getCurrentCourseIndex() {
         });
 }
 
+/* Course logic */ 
+
+function nextStep() {
+        var steps = document.getElementsByClassName('courseStep');
+        var completeButton = document.getElementById('completeCourseButton');
+
+        for (var i = 0; i < steps.length; i++) {
+            if (steps[i].classList.contains('active')) {
+                if (i === steps.length - 1) {
+                } else {
+                    steps[i].classList.remove('active');
+                    steps[i + 1].classList.add('active');
+                }
+                break;
+            }
+        }
+    }
+
+
 updateUserInfo();
 checkCourseCompletion();

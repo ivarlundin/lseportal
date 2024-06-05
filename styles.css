@@ -196,9 +196,14 @@ header {
 }
 
 /* Course style */
+.courseTitle {
+    display: inline-flex;
+}
 
 #courseComplete {
-    display: none;;
+    display: none;
+    height: 48px;
+    margin-left: 16px;
 }
 #courseComplete.complete {
     display: block;

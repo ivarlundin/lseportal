@@ -31,8 +31,10 @@
     <div class="main-content">
         <!-- Banner/Dashboard Section -->
         <header class="tile">
-            <h1>Course 1</h1>
-            <img id="courseComplete" class="" src="../assets/icons/checkmark.jpg">
+            <div class="courseTitle">
+                <h1>Course 1</h1>
+                <img id="courseComplete" class="" src="../assets/icons/checkmark.jpg">
+            </div>
 
             <div class="courseStep active">
                 <p>hello jag är steg 1</p>
@@ -45,13 +47,27 @@
                 <button onclick="nextStep()">Forsätt</button>
             </div>
 
-            <div class="courseStep 3">
+            <div class="courseStep">
                 <p>hello jag är steg 3</p>
+                <br>
+
+                <iframe width="640" height="480" src="https://www.youtube.com/embed/R1TosHoYFOU?si=fmruFRo54Aif9YHv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <br>
+                <button onclick="nextStep()">Forsätt</button>
+
+                
+            </div>
+
+            <div class="courseStep">
+                <p>Quiz</p>
                 <br>
                 <button onclick="nextStep()">Forsätt</button>
             </div>
 
-            <button onclick="completeCourse(1)">Complete Course</button>
+            <div class="courseStep">
+                <p>Jättebra jobbat :D</p>
+                <button id="completeCourseButton" onclick="completeCourse(1)">Complete Course</button>
+            </div>
         </header>
     </div>
 
