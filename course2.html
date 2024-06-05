@@ -31,14 +31,66 @@
     <div class="main-content">
         <!-- Banner/Dashboard Section -->
         <header class="tile">
-            <h1>Course 2</h1>
-            <img id="courseComplete" class="" src="checkmark.jpg">
-            
-            <button onclick="completeCourse(2)">Complete Course</button>
+            <div class="courseTitle">
+                <h1>Kurs 2 - Eldning 101</h1>
+                <img id="courseComplete" class="" src="checkmark.jpg">
+            </div>
         </header>
 
+        <div class="courseStep active">
+            <h2>Videokurs</h2>
+            <p>Du kommer nu få att se ett videoklipp där du kommer få lära dig:</p>
+            <ul>
+                <li>Grunderna i eldning</li>
+                <li>Säkerhet vid eldning</li>
+                <li>Tips & tricks</li>
+            </ul>
+            <p>
+                Klicka på "forsätt" för att se videon.
+            </p>
+        
+            <br>
+            <button onclick="videoTimeout()">Forsätt</button>
+        </div>
+
+        <div class="courseStep">
+            <h2>Videokurs</h2>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/KXHmfVsB524?si=4cpanPHDPNMSjSFc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <br>
+            <br>
+            <button id="videoTimeOut" onclick="">Forsätt</button>
+
+        </div>
+
+        <div class="courseStep">
+            <p>Quiz</p>
+            <br>
+            <button onclick="nextStep();">Forsätt</button>
+        </div>
+
+        <div class="courseStep">
+            <p>Jättebra jobbat :D</p>
+            <button id="completeCourseButton" onclick="completeCourse(2)">Complete Course</button>
+        </div>
     </div>
 
     <script src="course.js"></script>
+    <script src="app.js"></script>
+    <script>
+        function videoTimeout() {
+            nextStep();
+            // Set a timeout to add the 'active' class to the #videoTimeOut element after 25 minutes
+            setTimeout(function() {
+                document.getElementById('videoTimeOut').classList.add('active');
+            
+                // Add the onclick attribute to the button to trigger nextStep
+                document.getElementById('videoTimeOut').onclick = nextStep;
+            }, 5000); // 1500000 milliseconds = 25 minutes
+        }
+
+
+    </script>
 </body>
 </html>

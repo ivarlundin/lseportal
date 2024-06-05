@@ -35,80 +35,83 @@
                 <h1>Kurs 1 - Introduktion</h1>
                 <img id="courseComplete" class="" src="checkmark.jpg">
             </div>
-
-            <div class="courseStep active">
-                <h2>Hej och välkommen!</h2>
-                <p>Du ska precis börja din resa in i bastuns förtrollade värld. Vi kommer möta många nya termer, men oroa dig inte, vi kommer ta oss igenom detta. På din väg genom denna kurs har du gillet och dess förtroendevalda som har utformat denna kurs, just för att du ska kunna hantera bastuns kraftfulla egenskaper säkert. 
-                </p>
-
-                <br>
-                <br>
-
-                <p>
-                    Väl mött, lyckliga bastuönskningar
-                </p>
-                    <img src="signature.png" style="height: 80px;">
-                <p>
-                    Ordförande & styrelsen
-                </p>
-                <br>
-                <br>
-                <button onclick="nextStep()">Forsätt</button>
-            </div>
-            <div class="courseStep">
-                <h2>Videokurs</h2>
-                <p>Du kommer nu få att se ett videoklipp där du kommer få lära dig:</p>
-                <ul>
-                    <li>Grunderna i bastu</li>
-                    <li>Terminoligi</li>
-                    <li>Bastutyper</li>
-                    <li>Säkerhet</li>
-                    <li>Grundläggande säkerhet</li>
-                </ul>
-                <p>
-                    Klicka på "forsätt" för att se videon.
-                </p>
-            
-                <br>
-                <button onclick="nextStep()">Forsätt</button>
-            </div>
-
-            <div class="courseStep">
-                <h2>Videokurs</h2>
-                <p>Starta videon i spelaren nedan.</p>
-                <ul>
-                    <li>Grunderna i bastu</li>
-                    <li>Terminoligi</li>
-                    <li>Bastutyper</li>
-                    <li>Säkerhet</li>
-                    <li>Grundläggande säkerhet</li>
-                </ul>
-                <p>
-                    Klicka på "forsätt" för att se videon.
-                </p>
-            
-                <br>
-
-                <iframe width="640" height="480" src="https://www.youtube.com/embed/R1TosHoYFOU?si=fmruFRo54Aif9YHv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <br>
-                <button onclick="nextStep()">Forsätt</button>
-
-                
-            </div>
-
-            <div class="courseStep">
-                <p>Quiz</p>
-                <br>
-                <button onclick="nextStep()">Forsätt</button>
-            </div>
-
-            <div class="courseStep">
-                <p>Jättebra jobbat :D</p>
-                <button id="completeCourseButton" onclick="completeCourse(1)">Complete Course</button>
-            </div>
         </header>
+
+        <div class="courseStep active">
+            <h2>Hej och välkommen!</h2>
+            <p>Du ska precis börja din resa in i bastuns förtrollade värld. Vi kommer möta många nya termer, men oroa dig inte, vi kommer ta oss igenom detta. På din väg genom denna kurs har du gillet och dess förtroendevalda som har utformat denna kurs, just för att du ska kunna hantera bastuns kraftfulla egenskaper säkert. 
+            </p>
+
+            <br>
+            <br>
+
+            <p>
+                Väl mött, lyckliga bastuönskningar
+            </p>
+                <img src="signature.png" style="height: 80px;">
+            <p>
+                Ordförande & styrelsen
+            </p>
+            <br>
+            <br>
+            <button onclick="nextStep()">Forsätt</button>
+        </div>
+        <div class="courseStep">
+            <h2>Videokurs</h2>
+            <p>Du kommer nu få att se ett videoklipp där du kommer få lära dig:</p>
+            <ul>
+                <li>Grunderna i bastu</li>
+                <li>Terminoligi</li>
+                <li>Bastutyper</li>
+                <li>Säkerhet</li>
+                <li>Grundläggande säkerhet</li>
+            </ul>
+            <p>
+                Klicka på "forsätt" för att se videon.
+            </p>
+        
+            <br>
+            <button onclick="videoTimeout()">Forsätt</button>
+        </div>
+
+        <div class="courseStep">
+            <h2>Videokurs</h2>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/zf4qDPouBz0?si=32JSJh3aIU0iW_2Z&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <br>
+            <br>
+            <button id="videoTimeOut" onclick="">Forsätt</button>
+
+            
+        </div>
+
+        <div class="courseStep">
+            <p>Quiz</p>
+            <br>
+            <button onclick="nextStep();">Forsätt</button>
+        </div>
+
+        <div class="courseStep">
+            <p>Jättebra jobbat :D</p>
+            <button id="completeCourseButton" onclick="completeCourse(1)">Complete Course</button>
+        </div>
     </div>
 
     <script src="course.js"></script>
+    <script src="app.js"></script>
+    <script>
+        function videoTimeout() {
+            nextStep();
+            // Set a timeout to add the 'active' class to the #videoTimeOut element after 25 minutes
+            setTimeout(function() {
+                document.getElementById('videoTimeOut').classList.add('active');
+            
+                // Add the onclick attribute to the button to trigger nextStep
+                document.getElementById('videoTimeOut').onclick = nextStep;
+            }, 1500000); // 1500000 milliseconds = 25 minutes
+        }
+
+
+    </script>
 </body>
 </html>

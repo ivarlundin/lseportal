@@ -91,6 +91,12 @@ async function checkCourseCompletion() {
         const courseCompleteElement = document.getElementById('courseComplete');
         if (isCourseCompleted && courseCompleteElement) {
             courseCompleteElement.classList.add('complete');
+
+            //enable the direct next step in video
+            document.getElementById('videoTimeOut').classList.add('active');
+            
+            // Add the onclick attribute to the button to trigger nextStep
+            document.getElementById('videoTimeOut').onclick = nextStep;
         }
     } catch (error) {
         console.error('Error checking course completion:', error);

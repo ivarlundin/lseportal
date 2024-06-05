@@ -212,11 +212,18 @@ header {
 /* Course steps */
 
 .courseStep {
+    background-color: white;
     display: none;
     padding: 32px;
     border: 1px solid grey;
     margin-bottom: 16px;
 }
 .courseStep.active {
+    display: block;
+}
+#videoTimeOut {
+    display: none;
+}
+#videoTimeOut.active {
     display: block;
 }
