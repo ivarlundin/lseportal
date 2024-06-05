@@ -67,11 +67,11 @@ function updateUserInfo() {
 
         // Update avatar
         const avatarId = userData.avatarId;
-        const avatarPath = `../assets/avatars/avatar-${avatarId}.jpg`;
+        const avatarPath = `${avatarId}.jpg`;
         avatarElement.src = avatarPath;
     } else {
         // Default avatar
-        avatarElement.src = "../assets/avatars/avatar-0.jpg";
+        avatarElement.src = "avatar-0.jpg";
     }
 }
 

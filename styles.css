@@ -21,7 +21,7 @@ nav .nav-container {
     background-color: lightblue;
     padding: 8px 32px;
 
-    background: url('/assets/nav-banner.jpg');
+    background: url('nav-banner.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -49,7 +49,7 @@ nav .user-profile .profile-info {
 }
 
 nav .nav-elements {
-    background: url('/assets/nav-bg.jpg');
+    background: url('nav-bg.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     
@@ -60,7 +60,7 @@ nav .nav-elements {
     padding: 0px 16px;
 }
 .nav-elements ul li a {
-    background: url('/assets/navItem-standard.jpg');
+    background: url('navItem-standard.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
 
@@ -74,7 +74,7 @@ nav .nav-elements {
     text-decoration: none;
 }
 .nav-elements ul li a:hover {
-    background: url('/assets/navItem-hover.jpg');
+    background: url('navItem-hover.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     opacity: 1;
