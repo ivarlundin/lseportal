@@ -5,7 +5,7 @@ function generateCourseLinks() {
     const coursesContainer = document.getElementById('coursesContainer');
 
     // Fetch the courses data from courses.json
-    fetch('courses/courses.json')
+    fetch('courses.json')
         .then(response => response.json())
         .then(coursesData => {
             // Create an unordered list
@@ -29,7 +29,7 @@ function generateCourseLinks() {
 
                 // Course name
                 const link = document.createElement('a');
-                link.href = `courses/${course.index}.html`;
+                link.href = `${course.index}.html`;
                 link.textContent = course.name;
 
                 // Checkmark icon

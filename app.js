@@ -181,7 +181,7 @@ function getCompletedCourses() {
 async function getNumberOfCourses() {
     try {
         // Fetch the courses data from courses.json
-        const response = await fetch('courses/courses.json');
+        const response = await fetch('courses.json');
         const coursesData = await response.json();
 
         return coursesData.length;
