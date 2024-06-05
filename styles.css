@@ -204,3 +204,14 @@ header {
     display: block;
 }
 
+/* Course steps */
+
+.courseStep {
+    display: none;
+    padding: 32px;
+    border: 1px solid grey;
+    margin-bottom: 16px;
+}
+.courseStep.active {
+    display: block;
+}

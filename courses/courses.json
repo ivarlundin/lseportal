@@ -1,5 +1,6 @@
 [
-    { "name": "Första kursen", "index": "course1", "id": 1 },
-    { "name": "Andra kursen", "index": "course2", "id": 2  },
-    { "name": "Tredje kursen (NY)", "index": "course3", "id": 3  }
+    { "name": "Kurs 1 - Introduktion", "index": "course1", "id": 1 },
+    { "name": "Kurs 2 - Eldning 101", "index": "course2", "id": 2  },
+    { "name": "Kurs 3 - Aufguss - Grunderna", "index": "course3", "id": 3  }, 
+    { "name": "Fördjupning: Ontologiska värden i skandinavisk kroppsritual - Vad är en bastu?", "index": "course4", "id": 4  }
 ]

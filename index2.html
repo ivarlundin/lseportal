@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sauna Portal v0.9</title>
+</head>
+<body>
+
+    <!-- Initial Modal to Choose New or Existing User -->
+    <div id="initialModal" class="modal">
+        <div class="modal-content">
+            <h2>Welcome to Our Platform!</h2>
+            <p>Are you a new user or an existing member?</p>
+            <button onclick="promptNewUserData();">New User</button>
+            <button onclick="promptExistingUserData();">Existing User</button>
+        </div>
+    </div>
+
+    <!-- New User Modal -->
+    <div id="newUserModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('newUserModal')">&times;</span>
+            <h2>Welcome, New User!</h2>
+            <p>Let's get started by entering your information:</p>
+
+            <label for="userName">Name:</label>
+            <input type="text" id="userName">
+            <label for="userNickname">Nickname:</label>
+            <input type="text" id="userNickname">
+            <label for="avatar">Choose an Avatar:</label>
+            <input type="radio" name="avatar" value="01" checked>Avatar 1
+            <input type="radio" name="avatar" value="02">Avatar 2
+            <input type="radio" name="avatar" value="03">Avatar 3
+            <button id="loginNewUser">Log In</button>
+        </div>
+    </div>
+    
+    <!-- Existing User Modal -->
+    <div id="existingUserModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('existingUserModal')">&times;</span>
+            <h2>Existing User? Login Here</h2>            
+            <label for="existingUserName">Username:</label>
+            <input type="text" id="existingUserName">
+            <label for="userPassword">Password:</label>
+            <input type="password" id="userPassword">
+            <button id="loginExistingUser">Login</button>
+            <p id="errorText" class="error-text"></p>
+            <span>
+                <p>Not existing user? Create a new account</p>
+                <a href="#" id="newUserLink">here</a>
+            </span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <img id="siteLogo" src="/assets/sauna portal.png">
+            <div class="user-profile">
+                <div class="profile-info">
+                    <span class="username">User Name</span>
+                    <span class="nickname">NickName</span>
+                </div>
+                <img src="assets/avatars/avatar-0.png">
+            </div>
+        </div>
+        <div class="nav-elements">
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#" class="">News</a></li>
+                <li><a href="courses-inventory.html" class="">Courses</a></li>
+                <li><a href="#" class="">Resources</a></li>
+            </ul>
+        </div>
+    </li>
+    </nav>
+
+    <div class="main-content">
+        <!-- Banner/Dashboard Section -->
+        <header class="tile">
+            <h1>Welcome!</h1>
+            <p>Course Completion: <span id="completionPercentage">0%</span></p>
+        </header>
+
+        <!-- Courses Section -->
+        <section id="courses" class="tile availableCourses">
+            <h2>Courses for you:</h2>
+            
+            <ul id="coursesContainer"></ul>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="home.js"></script>
+</body>
+</html>
