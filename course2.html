@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Fördjupning: Ontologiska värden i skandinavisk kroppsritual - Vad är en bastu? </title>
+    <title>Course 2</title>
 </head>
 <body>
     <!-- Navigation -->
@@ -32,33 +32,32 @@
         <!-- Banner/Dashboard Section -->
         <header class="tile">
             <div class="courseTitle">
-                <h1>Kurs 4 - Fördjupning: Ontologiska värden i skandinavisk kroppsritual - Vad är en bastu?</h1>
+                <h1>Kurs 2 - Eldning 101</h1>
                 <img id="courseComplete" class="" src="checkmark.jpg">
             </div>
         </header>
 
         <div class="courseStep active">
             <h2>Videokurs</h2>
-            <p>Du kommer nu att få se ett klipp där våra kursledare tar er genom vår fördjupning där vi kollar på:</p>
+            <p>Du kommer nu få att se ett videoklipp där du kommer få lära dig:</p>
             <ul>
-                <li>Ontologiska värden</li>
-                <li>Perceptionsteori</li>
-                <li>Vett & Etikett 2</li>
-                <li>Rituell praxis i bastumiljö</li>
-                <li>Och mycket mer</li>
+                <li>Grunderna i eldning</li>
+                <li>Säkerhet vid eldning</li>
+                <li>Tips & tricks</li>
             </ul>
             <p>
                 Klicka på "forsätt" för att se videon.
             </p>
         
             <br>
-            <button onclick="nextStep()">Forsätt</button>
+            <button onclick="videoTimeout()">Forsätt</button>
         </div>
 
         <div class="courseStep">
             <h2>Videokurs</h2>
 
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/r_S5UAajMFw?si=9dJPSPZiG5uymDIM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/KXHmfVsB524?si=4cpanPHDPNMSjSFc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
             <br>
             <br>
             <button id="videoTimeOut" onclick="">Forsätt</button>
@@ -69,28 +68,28 @@
             <h2>Quiz</h2>
             <form id="quizForm">
                 <div class="question">
-                    <p>Vilket av följande kan tillskrivas ett holistiskt perspektiv av en bastu? ?</p>
-                    <label><input type="radio" name="q1" value="a"> En bastu är summan av sina delar och värme, dryck och doftolja.</label><br>
-                    <label><input type="radio" name="q1" value="b"> En bastu är enbart summan av sina delar. Utan dessa existerar inte bastun.</label><br>
-                    <label><input type="radio" name="q1" value="c"> En bastu är mer än sina delar. Består även av sociala aspekter och abstraktion.</label><br>
+                    <p>Hur tänder vi kaminen?</p>
+                    <label><input type="radio" name="q1" value="a"> Kolla ventiler är stängda, bygg ett cirkulärt lager med ved och tändkuddarna bredvid</label><br>
+                    <label><input type="radio" name="q1" value="b"> Placera vedträn luftigt, tänd först på de största vedklabbarna och släng in tidningspapper vid behov</label><br>
+                    <label><input type="radio" name="q1" value="c"> Öppna ventiler, bygg fyrkantiga lager och tänd på tändkuddar under översta vedlagret.</label><br>
                 </div>
                 <div class="question">
-                    <p>Vilket av följande är inte tillåtet språk gentemot aufgussmästaren under pågående session?</p>
-                    <label><input type="radio" name="q2" value="a"> “Var hälsad, aufgusmästare”</label><br>
-                    <label><input type="radio" name="q2" value="b"> “Tack, aufgusmästare”</label><br>
-                    <label><input type="radio" name="q2" value="c"> “Nu går jag ut”</label><br>
+                    <p>Vilket flöde av förbränningsluft vill vi ha?</p>
+                    <label><input type="radio" name="q2" value="a"> Mycket -> Lågt -> Mer vid glöd</label><br>
+                    <label><input type="radio" name="q2" value="b"> Lågt -> Medium -> Mycket</label><br>
+                    <label><input type="radio" name="q2" value="c"> Mycket -> Lågt -> Inget</label><br>
                 </div>
                 <div class="question">
-                    <p>Aufgussens definition beskrivs ofta enligt Joe Cock Burnes modell. Vilka tre axlar utgör modellen?</p>
-                    <label><input type="radio" name="q3" value="a"> Värme, Socialt tryck och Uthållighet</label><br>
-                    <label><input type="radio" name="q3" value="b"> Värme, Uthållighet och Kordination</label><br>
-                    <label><input type="radio" name="q3" value="c"> Värme, Socialt tryck och ritualindex</label><br>
+                    <p>Vilket av följande är god förberedelse för en eldning?</p>
+                    <label><input type="radio" name="q3" value="a"> Lövved, 20 st stora klabbar och ett elddon</label><br>
+                    <label><input type="radio" name="q3" value="b"> Barrved, 15 mindre klabbar och tändvätska</label><br>
+                    <label><input type="radio" name="q3" value="c"> Lövved, blandade storlekar av klabbar och tändkuddar/tändstickor</label><br>
                 </div>
                 <div class="question">
-                    <p>Vilket av följande bastuupplägg uppfyller flest parametrar enligt Perceptionsteorin?</p>
-                    <label><input type="radio" name="q4" value="a"> Björkris, givande samtal, trång bastu, laserpekare</label><br>
-                    <label><input type="radio" name="q4" value="b"> Kall öl, ölkorv, 65 graders temperatur, vinterlandskap,  trevlig ung dam</label><br>
-                    <label><input type="radio" name="q4" value="c"> Frottéhandduk, tallbarsolja, kolsyrat mineralvatten, Bolero</label><br>
+                    <p>Vad indikerar bra eldning och ventilation?</p>
+                    <label><input type="radio" name="q4" value="a"> Tydlig rökdoft i bastun, svaga gula lågor</label><br>
+                    <label><input type="radio" name="q4" value="b"> Svag rökdoft, kraftfulla röda lågor och en känsla av syre</label><br>
+                    <label><input type="radio" name="q4" value="c"> Liten till ej märkbar rökdoft, kraftfulla gula lågor</label><br>
                 </div>
                 <br>
                 <button type="button" onclick="checkAnswers()">Svara</button>
@@ -111,10 +110,12 @@
             <br>
             Teamet på SaunaPortal
             </p>
-            <button id="completeCourseButton" onclick="completeCourse(4)">Complete Course</button>
+            <button id="completeCourseButton" onclick="completeCourse(2)">Complete Course</button>
         </div>
     </div>
 
+    <script src="course.js"></script>
+    <script src="app.js"></script>
     <script>
         function videoTimeout() {
             nextStep();
@@ -124,14 +125,14 @@
             
                 // Add the onclick attribute to the button to trigger nextStep
                 document.getElementById('videoTimeOut').onclick = nextStep;
-            }, 1500000); // 1500000 milliseconds = 25 minutes
+            }, 96000); // 1500000 milliseconds = 25 minutes
         }
 
         // Define the correct answers in an object
         const correctAnswers = {
             q1: "c",
-            q2: "c",
-            q3: "a",
+            q2: "a",
+            q3: "c",
             q4: "c"
         };
 
@@ -162,7 +163,5 @@
         }
 
     </script>
-    <script src="course.js"></script>
-    <script src="app.js"></script>
 </body>
 </html>

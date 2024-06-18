@@ -1,93 +1,114 @@
 [
     {
         "username": "peperipaperika",
-        "password": "1234",
+        "password": "9876",
         "fullname": "Ivar Lundin",
         "avatarId": "04",
         "rank": "Sauna-lord"
     },
     {
         "username": "superoul",
-        "password": "1234",
+        "password": "5432",
         "fullname": "Martin Lundin",
         "avatarId": "05",
         "rank": "Imperial gusster"
     },
     {
         "username": "lundout",
-        "password": "1234",
+        "password": "1098",
         "fullname": "Victor Lundin",
         "avatarId": "06",
         "rank": "Knight of the guss"
     },
     {
         "username": "ozzypop",
-        "password": "1234",
+        "password": "7654",
         "fullname": "Oscar Lundin",
         "avatarId": "07",
         "rank": "Ranger"
     },
     {
         "username": "genelectwins",
-        "password": "1234",
+        "password": "3210",
         "fullname": "Anton Lundin",
         "avatarId": "08",
         "rank": "TurboGuss"
     },
     {
         "username": "ingelstone",
-        "password": "1234",
+        "password": "8901",
         "fullname": "Olof Ingelsten",
         "avatarId": "09",
         "rank": "Intermediate"
     },
     {
         "username": "teajutestrom",
-        "password": "1234",
+        "password": "4567",
         "fullname": "Tea Juteström",
         "avatarId": "10",
         "rank": "Explorer"
     },
     {
         "username": "red-doodle-vh",
-        "password": "1234",
+        "password": "2345",
         "fullname": "Knut Lundin Juteström",
         "avatarId": "11",
         "rank": "No rank"
     },
     {
         "username": "g-lundin",
-        "password": "1234",
+        "password": "8765",
         "fullname": "Gunnar Lundin",
         "avatarId": "12",
         "rank": "Property Manager"
     },
     {
         "username": "Claudia",
-        "password": "1234",
+        "password": "5432",
         "fullname": "Claudia ?",
         "avatarId": "13",
         "rank": "NaN"
     },
     {
         "username": "robin",
-        "password": "1234",
+        "password": "2109",
         "fullname": "Robin R*****",
         "avatarId": "14",
         "rank": "Mingler"
     },
     {
         "username": "lennartsson-chick",
-        "password": "1234",
+        "password": "9876",
         "fullname": "Random lennartsson chick",
         "avatarId": "15",
         "rank": "Established"
     },
     {
         "username": "theDJvikkeXX",
-        "password": "4321",
+        "password": "6543",
         "fullname": "Viktor Berndt Otto Klasson",
         "avatarId": "16",
         "rank": "Follower of the knights"
+    },
+    {
+        "username": "samuelnyberg",
+        "password": "3210",
+        "fullname": "Samuel Nyberg",
+        "avatarId": "18",
+        "rank": "Novice"
+    },
+    {
+        "username": "caspiananderssondominique",
+        "password": "1098",
+        "fullname": "Caspian",
+        "avatarId": "19",
+        "rank": "Novice"
+    },
+    {
+        "username": "hdernehl",
+        "password": "8765",
+        "fullname": "Hannes",
+        "avatarId": "20",
+        "rank": "Master"
     }
 ]
