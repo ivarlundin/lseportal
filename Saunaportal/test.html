@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Sauna Portal v0.9</title>
+    <title>Sauna Portal</title>
 </head>
 <body>
 
@@ -58,21 +58,22 @@
     <!-- Navigation -->
     <nav>
         <div class="nav-container">
-            <img id="siteLogo" src="sauna portal.png">
+            <img id="siteLogo" src="/assets/sauna portal.png">
             <div class="user-profile">
                 <div class="profile-info">
                     <span class="username">User Name</span>
                     <span class="nickname">NickName</span>
                 </div>
-                <img src="avatar-0.png">
+                <img src="../assets/avatars/avatar-05.png">
             </div>
         </div>
         <div class="nav-elements">
             <ul>
                 <li><a href="#" class="active">Home</a></li>
                 <li><a href="#" class="">News</a></li>
-                <li><a href="courses-inventory.html" class="">Courses</a></li>
+                <li><a href="#" class="">Courses</a></li>
                 <li><a href="#" class="">Resources</a></li>
+                <li><a href="/404" class="">Forum</a></li>
             </ul>
         </div>
     </li>
@@ -80,16 +81,17 @@
 
     <div class="main-content">
         <!-- Banner/Dashboard Section -->
-        <header class="tile">
+        <header>
             <h1>Welcome!</h1>
             <p>Course Completion: <span id="completionPercentage">0%</span></p>
         </header>
 
         <!-- Courses Section -->
-        <section id="courses" class="tile availableCourses">
-            <h2>Courses for you:</h2>
+        <section id="courses">
+            <h2>Available Courses:</h2>
             
             <ul id="coursesContainer"></ul>
+            <ul></ul>
         </section>
     </div>
 

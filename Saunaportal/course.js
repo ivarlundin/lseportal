@@ -143,6 +143,5 @@ function nextStep() {
         }
     }
 
-
 updateUserInfo();
 checkCourseCompletion();

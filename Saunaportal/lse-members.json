@@ -82,5 +82,12 @@
         "fullname": "Random lennartsson chick",
         "avatarId": "15",
         "rank": "Established"
+    },
+    {
+        "username": "theDJvikkeXX",
+        "password": "4321",
+        "fullname": "Viktor Berndt Otto Klasson",
+        "avatarId": "16",
+        "rank": "Follower of the knights"
     }
 ]

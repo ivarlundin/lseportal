@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Sauna Portal</title>
+    <title>Sauna Portal v0.9</title>
 </head>
 <body>
 
@@ -21,18 +21,24 @@
     <!-- New User Modal -->
     <div id="newUserModal" class="modal">
         <div class="modal-content">
-            <span class="close" onclick="closeModal('newUserModal')">&times;</span>
+    
             <h2>Welcome, New User!</h2>
             <p>Let's get started by entering your information:</p>
-
+            <br>
             <label for="userName">Name:</label>
             <input type="text" id="userName">
+            <br>
             <label for="userNickname">Nickname:</label>
             <input type="text" id="userNickname">
+            <br>
+            <br>
             <label for="avatar">Choose an Avatar:</label>
-            <input type="radio" name="avatar" value="01" checked>Avatar 1
-            <input type="radio" name="avatar" value="02">Avatar 2
-            <input type="radio" name="avatar" value="03">Avatar 3
+            <br>
+            <input type="radio" name="avatar" value="01" checked><img src="avatar-00.jpg">
+            <input type="radio" name="avatar" value="02"><img src="avatar-02.jpg">
+            <input type="radio" name="avatar" value="03"><img src="avatar-03.jpg">
+            <br>
+            <br>
             <button id="loginNewUser">Log In</button>
         </div>
     </div>
@@ -40,15 +46,22 @@
     <!-- Existing User Modal -->
     <div id="existingUserModal" class="modal">
         <div class="modal-content">
-            <span class="close" onclick="closeModal('existingUserModal')">&times;</span>
-            <h2>Existing User? Login Here</h2>            
+            <h2>Existing User? Login Here</h2> 
+            <br>           
             <label for="existingUserName">Username:</label>
+            <br>
             <input type="text" id="existingUserName">
+            <br>
+            <br>
             <label for="userPassword">Password:</label>
+            <br>
             <input type="password" id="userPassword">
+            <br>
+            <br>
             <button id="loginExistingUser">Login</button>
+            <br>
             <p id="errorText" class="error-text"></p>
-            <span>
+            <span style="display: inline-block;">
                 <p>Not existing user? Create a new account</p>
                 <a href="#" id="newUserLink">here</a>
             </span>
@@ -58,21 +71,23 @@
     <!-- Navigation -->
     <nav>
         <div class="nav-container">
-            <img id="siteLogo" src="/assets/sauna portal.png">
+            <img id="siteLogo" src="sauna portal.png">
             <div class="user-profile">
                 <div class="profile-info">
                     <span class="username">User Name</span>
                     <span class="nickname">NickName</span>
                 </div>
-                <img src="../assets/avatars/avatar-05.png">
+                <img src="avatar-0.jpg">
             </div>
         </div>
         <div class="nav-elements">
             <ul>
                 <li><a href="#" class="active">Home</a></li>
-                <li><a href="#" class="">News</a></li>
-                <li><a href="#" class="">Courses</a></li>
-                <li><a href="#" class="">Resources</a></li>
+                <li><a href="404.html" class="">News</a></li>
+                <li><a href="courses-inventory.html" class="">Courses</a></li>
+                <li><a href="404.html" class="">Resources</a></li>
+                <li><a href="certificate-page.html" class="">Certificates</a></li>
+                <li><a href="404.html" class="">Forum</a></li>
             </ul>
         </div>
     </li>
@@ -80,17 +95,16 @@
 
     <div class="main-content">
         <!-- Banner/Dashboard Section -->
-        <header>
+        <header class="tile">
             <h1>Welcome!</h1>
             <p>Course Completion: <span id="completionPercentage">0%</span></p>
         </header>
 
         <!-- Courses Section -->
-        <section id="courses">
-            <h2>Available Courses:</h2>
+        <section id="courses" class="tile availableCourses">
+            <h2>Courses for you:</h2>
             
             <ul id="coursesContainer"></ul>
-            <ul></ul>
         </section>
     </div>
 
