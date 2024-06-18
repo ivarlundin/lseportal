@@ -94,21 +94,21 @@
         "username": "samuelnyberg",
         "password": "3210",
         "fullname": "Samuel Nyberg",
-        "avatarId": "18",
+        "avatarId": "17",
         "rank": "Novice"
     },
     {
         "username": "caspiananderssondominique",
         "password": "1098",
         "fullname": "Caspian",
-        "avatarId": "19",
+        "avatarId": "18",
         "rank": "Novice"
     },
     {
         "username": "hdernehl",
         "password": "8765",
         "fullname": "Hannes",
-        "avatarId": "20",
+        "avatarId": "19",
         "rank": "Master"
     }
 ]

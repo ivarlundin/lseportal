@@ -4,17 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Sauna Portal v0.9</title>
+    <title>Sauna Portal v1</title>
 </head>
 <body>
 
     <!-- Initial Modal to Choose New or Existing User -->
     <div id="initialModal" class="modal">
         <div class="modal-content">
-            <h2>Welcome to Our Platform!</h2>
-            <p>Are you a new user or an existing member?</p>
-            <button onclick="promptNewUserData();">New User</button>
-            <button onclick="promptExistingUserData();">Existing User</button>
+            <div style="display: inline-flex; justify-content: space-between;">
+                <div>
+                    <img style="width: 64px;"src="welcomelogo.png">
+                    <br>
+                    <br>
+                    <h2>Welcome to Our Platform!</h2>
+                    <p>Are you a new user or an existing member?</p>
+                    
+                    <br>
+                    <button onclick="promptNewUserData();">New User</button>
+                    <button onclick="promptExistingUserData();">Existing User</button>
+                    </div>
+                <div>
+                    <img src="happy-emoji.png">
+                </div>
+            </div>
         </div>
     </div>
 
@@ -34,7 +46,7 @@
             <br>
             <label for="avatar">Choose an Avatar:</label>
             <br>
-            <input type="radio" name="avatar" value="01" checked><img src="avatar-00.jpg">
+            <input type="radio" name="avatar" value="01" checked><img src="avatar-01.jpg">
             <input type="radio" name="avatar" value="02"><img src="avatar-02.jpg">
             <input type="radio" name="avatar" value="03"><img src="avatar-03.jpg">
             <br>
