@@ -228,3 +228,52 @@ header {
 #videoTimeOut.active {
     display: block;
 }
+
+/* Certificates */
+.certificates-showcase {
+    
+}
+.certificates-row  {
+    background-image: url(./bookshelfv2.png);
+    background-size: contain; /* Make the background image cover the entire container */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-position: center bottom; /* Center the background image */
+
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: space-evenly;
+
+    padding-bottom: 48px;
+    perspective: 10000px; 
+}
+.certificates-row .no-course {
+    opacity: 0;
+}
+
+
+.certificates-row img  {
+    height: 256px;
+    transition: all 0.75s ease-in-out;
+    transform-style: preserve-3d;
+    outline: 2000px solid rgba(0, 0, 0, 0.0);
+    box-shadow: 0 10px 16px rgba(0, 0, 0, 0.55);
+    opacity: 0.05
+}
+.certificates-row img.done {
+    height: 256px;
+    transition: all 0.75s ease-in-out;
+    transform-style: preserve-3d;
+    outline: 2000px solid rgba(0, 0, 0, 0.0);
+    box-shadow: 0 10px 16px rgba(0, 0, 0, 0.55);
+    opacity: 1;
+    border: 2px solid white;
+}
+.certificates-row img.done:hover {
+    transform: rotateY(25deg) scale(1.8) rotate(10deg);
+    box-shadow: 0 10px 64px rgba(0, 0, 0, 0.55);
+    filter: drop-shadow(8px 4px 0px white);
+    outline: 2000px solid rgba(0, 0, 0, 0.4);
+}
+.certificates-row .items .shelf {
+    width: fit-content
+}
