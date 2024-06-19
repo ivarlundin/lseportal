@@ -86,7 +86,7 @@
                     <span class="username">User Name</span>
                     <span class="nickname">NickName</span>
                 </div>
-                <img src="avatar-0.jpg">
+                <img src="avatar-00.jpg">
             </div>
         </div>
         <div class="nav-elements">
@@ -119,6 +119,31 @@
 
     <script src="app.js"></script>
     <script src="home.js"></script>
-    <script src="course.js"></script>
+    <script>
+        /*godmode*/
+        let counter = 0;  // Variable to count how many times "tallbarr" is answered
+
+
+        function askQuestion() {
+            if (counter >= 2) {
+                const answer = prompt("Bästa olja?");  // Ask the user for input
+                
+                if (answer && answer.toLowerCase() === "tallbarr") {
+                    for (let i = 1; i <= 20; i++) {
+                        completeCourse(i);
+                        console.log("Course completed:", i);
+                    }
+                    window.location.reload();  // Reload the page after completion
+                    counter = 0;  // Reset the counter after executing the function
+                } else {
+                    alert('Nej.');  // Optional message if the answer is not "tallbarr"
+                    counter = 0;  // Reset counter if the answer is not "tallbarr"
+                }
+            } else {
+                counter++;  // Increment counter after executing the function
+            }
+        }
+
+    </script>
 </body>
 </html>
