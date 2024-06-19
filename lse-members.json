@@ -110,5 +110,12 @@
         "fullname": "Hannes",
         "avatarId": "19",
         "rank": "Master"
+    },
+    {
+        "username": "alven69",
+        "password": "0902",
+        "fullname": "Alva Thorén",
+        "avatarId": "20",
+        "rank": "Master"
     }
 ]

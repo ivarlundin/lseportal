@@ -169,15 +169,14 @@ h1, h2, h3 {
     left: 50%;
     transform: translate(-50%, -50%);
 
-    width: 700px;
+    width: 300px;
     height: 300px;
 
     padding: 48px;
 
     background-color: white;
     border: 1px solid #ccc;
-    box-shadow: 0 0 100px rgba(0, 0, 0, 0.9); /* 90s drop shadow */
-
+    outline: 2000px solid rgba(0, 0, 0, 0.9);
     z-index: 1; /* Default z-index */
 
 
