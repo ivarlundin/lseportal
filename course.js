@@ -143,5 +143,31 @@ function nextStep() {
         }
     }
 
+
+/*godmode*/
+let counter = 0;  // Variable to count how many times "tallbarr" is answered
+
+
+function askQuestion() {
+    if (counter >= 2) {
+        const answer = prompt("Bästa olja?");  // Ask the user for input
+        
+        if (answer && answer.toLowerCase() === "tallbarr") {
+            for (let i = 1; i <= 20; i++) {
+                completeCourse(i);
+                console.log("Course completed:", i);
+            }
+            window.location.reload();  // Reload the page after completion
+            counter = 0;  // Reset the counter after executing the function
+        } else {
+            alert('Nej.');  // Optional message if the answer is not "tallbarr"
+            counter = 0;  // Reset counter if the answer is not "tallbarr"
+        }
+    } else {
+        counter++;  // Increment counter after executing the function
+    }
+}
+
+
 updateUserInfo();
 checkCourseCompletion();

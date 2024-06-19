@@ -245,7 +245,7 @@ header {
     perspective: 10000px; 
 }
 .certificates-row .no-course {
-    opacity: 0;
+    opacity: 0 !important;
 }
 
 
