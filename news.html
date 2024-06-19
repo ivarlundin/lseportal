@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sauna Portal v1</title>
+</head>
+<body>
+
+    <!-- Initial Modal to Choose New or Existing User -->
+    <div id="initialModal" class="modal">
+        <div class="modal-content">
+            <img style="width: 64px;"src="welcomelogo.png">
+            <br>
+    
+            <h2>Välkommen till SaunaPortal!</h2>
+            <p>Snart är du inne i värmen! Vänligen välj ett alternativ nedan.</p>
+            <br>
+            <button style="transform-origin: left; transform: scale(1.3); padding: 16px 24px;"onclick="promptExistingUserData();">Jag har fått inbjudan</button>
+            <br>
+            <br>
+            <a style="font-size: 14px; text-decoration: underline" onclick="promptNewUserData();">Skapa konto utan inbjudan</a>
+            <br>
+            <br>
+            <p style="font-size: 14px; font-style: italic;"><span style="font-weight: bold; color: #984f13;">OBS!</span> Denna plattformen är byggd för stationär dator. Om du använder mobil, använd landskapsläge..</p>
+        </div>
+    </div>
+
+    <!-- New User Modal -->
+    <div id="newUserModal" class="modal">
+        <div class="modal-content">
+    
+            <h2>Welcome, New User!</h2>
+            <p>Let's get started by entering your information:</p>
+            <br>
+            <label for="userName">Name:</label>
+            <input type="text" id="userName">
+            <br>
+            <label for="userNickname">Nickname:</label>
+            <input type="text" id="userNickname">
+            <br>
+            <br>
+            <label for="avatar">Choose an Avatar:</label>
+            <br>
+            <input type="radio" name="avatar" value="01" checked><img src="avatar-01.jpg">
+            <input type="radio" name="avatar" value="02"><img src="avatar-02.jpg">
+            <input type="radio" name="avatar" value="03"><img src="avatar-03.jpg">
+            <br>
+            <br>
+            <button id="loginNewUser">Log In</button>
+        </div>
+    </div>
+    
+    <!-- Existing User Modal -->
+    <div id="existingUserModal" class="modal">
+        <div class="modal-content">
+            <h2>Existing User? Login Here</h2> 
+            <br>           
+            <label for="existingUserName">Username:</label>
+            <br>
+            <input type="text" id="existingUserName">
+            <br>
+            <br>
+            <label for="userPassword">Password:</label>
+            <br>
+            <input type="password" id="userPassword">
+            <br>
+            <br>
+            <button id="loginExistingUser">Login</button>
+            <br>
+            <p id="errorText" class="error-text"></p>
+            <span style="display: inline-block;">
+                <p>Not existing user? Create a new account</p>
+                <a href="#" id="newUserLink">here</a>
+            </span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <img id="siteLogo" src="sauna portal.png">
+            <div class="user-profile">
+                <div class="profile-info">
+                    <span class="username">User Name</span>
+                    <span class="nickname">NickName</span>
+                </div>
+                <img src="avatar-0.jpg">
+            </div>
+        </div>
+        <div class="nav-elements">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#" class="">News</a></li>
+                <li><a href="courses-inventory.html" class="">Courses</a></li>
+                <li><a href="404.html" class="">Resources</a></li>
+                <li><a href="certificate-page.html" class="">Certificates</a></li>
+                <li><a href="404.html" class="">Forum</a></li>
+            </ul>
+        </div>
+    </li>
+    </nav>
+
+    <div class="main-content">
+        <!-- Banner/Dashboard Section -->
+        <header class="news-banner tile">
+            <h1>Nyheter!</h1>
+            <p>Se senaste nyheterna i världen av bastu. Har du ämnen du vill diskutera? <a href="mailto:webmaster@saunaportal.se">Hör av dig!</a><p>
+        </header>
+
+        <!-- Courses Section -->
+        <section id="newsfeed">
+            <div class="news-item tile">
+                <h2 style="margin-bottom: 2px;">Techno Aufguss på Midsommar</h2>
+                <div style="display: inline-flex; gap: 12px">
+                    <p>19 Juni 2024</p>
+                    <p>Av: Victor Lundin</p>
+                    <p class="tag">Midsommar</p>
+                    <p class="tag">Aufguss</p>
+                    <p class="tag">Techno</p>
+                </div>
+                <br>
+                <img style="width: 500px" src="technoguss.png">
+                <p>
+                    Förbered dig på en oförglömlig upplevelse när midsommarnatten förvandlas till en fest för alla sinnen med vår unika Techno Aufguss-session. Detta speciella evenemang kommer att erbjuda en energifylld atmosfär där technomusik, kraftfulla ljudanläggningar och en spektakulär ljusshow skapar en magisk stämning i bastun.<br><br>
+                    Techno Aufguss-sessionen kommer att vara fullspäckad med ånga och intensiva handduksrörelser, allt till rytmen av hypnotiska technobeats. Den kraftfulla ljudanläggningen kommer att få golvet att vibrera och ljusshowen, med sina färgsprakande effekter, kommer att förvandla bastun till en riktig festarena. Det blir en upplevelse som stimulerar både kropp och sinne, perfekt för att fira midsommar på ett annorlunda och minnesvärt sätt.<br><br>
+                    
+                    Utöver den innovativa Techno Aufguss-sessionen, kommer vi också att erbjuda traditionella Aufguss-sessioner för de som föredrar en mer klassisk bastuupplevelse. Dessa sessioner kommer att ledas av våra erfarna Aufgussmeister som använder eteriska oljor för att skapa en lugnande och hälsosam miljö. Varje traditionell session avslutas med en lugnande och svalkande paus för optimal återhämtning.<br><br>
+                    
+                    Vi är också glada att meddela att H. Dernehl, den hyllade Aufgussmeistern, kommer att gästspela under midsommarevenemanget. Efter fjolårets succé har många av våra medlemmar önskat hans återkomst, och vi är stolta över att kunna uppfylla denna begäran. H. Dernehl är känd för sina kreativa och intensiva Aufguss-ritualer som alltid lämnar deltagarna i ett tillstånd av djup avslappning och eufori.<br><br>
+                    
+                    Som en extra bonus kommer vi att erbjuda en specialutgåva av vår signatur-smoothie efter varje session. Denna smoothie, gjord på färska bär och naturliga ingredienser, är perfekt för att återställa energinivåerna och ge en uppfriskande avslutning på din bastuupplevelse.<br><br>
+                    
+                    Oavsett om du är en trogen bastuälskare eller nyfiken nybörjare, så är vår Techno Aufguss på midsommar något du inte vill missa. Kom och upplev en kväll fylld av ånga, musik och magi!
+                    
+                    </p>
+            </div>
+            <div class="news-item tile">
+                <h2 style="margin-bottom: 2px;">Nu närmar det sig...</h2>
+                <div style="display: inline-flex; gap: 12px">
+                    <p>19 Juni 2024</p>
+                    <p>Av: Webmaster</p>
+                    <p class="tag">Midsommar</p>
+                    <p class="tag">Bastu</p>
+                    <p class="tag">Hälsa</p>
+                </div>
+                <br>
+                <img style="width: 500px" src="midsommar-stang.png">
+                <p>
+                    Kom och fira midsommar med oss på ett avkopplande och hälsosamt sätt med våra speciella bastusessioner! Under hela dagen och framförallt på kvällen, kommer vi att erbjuda en rad olika bastuupplevelser som passar alla smaker och behov.<br><br>
+                    
+                    Våra bastusessioner är utformade för att ge maximal avkoppling och välmående. Oavsett om du föredrar en lugn och traditionell session eller något mer energifyllt, har vi något för dig. Våra erfarna Aufgussmeister kommer att leda sessionerna med precision och omsorg, och använda eteriska oljor för att förhöja upplevelsen och ge en mängd hälsofördelar.<br><br>
+                    <br><br>
+                    <strong>Lite kul fakta om bastu!</strong><br><br>
+                    <ul>
+                        <li>Bastu har använts i över 2000 år och har sitt ursprung i Finland.</li>
+                        <li>Regelbunden bastubadning kan bidra till att förbättra hjärt- och kärlhälsan.</li>
+                        <li>En bastusession kan hjälpa till att eliminera toxiner genom svettning.</li>
+                        <li>Bastu kan hjälpa till att lindra muskelvärk och stelhet.</li>
+                        <li>Att växla mellan varm bastu och kall dusch kan stärka immunförsvaret.</li>
+                    </ul><br><br>
+                    
+                    Vi är också stolta över att ha H. Dernehl, den hyllade Aufgussmeistern, som kommer att gästa våra midsommarevenemang. Hans unika och intensiva Aufguss-ritualer är kända för att lämna deltagarna i ett tillstånd av djup avslappning och eufori. Hans närvaro är efterfrågad av många av våra medlemmar, särskilt efter förra årets succé.<br><br>
+                    
+                    Efter varje bastusession kommer vi att erbjuda vår signatur-smoothie, en perfekt blandning av färska bär och naturliga ingredienser, för att återställa energinivåerna och ge en uppfriskande avslutning på din bastuupplevelse.<br><br>
+                    
+                    Oavsett om du är en trogen bastuälskare eller nyfiken nybörjare, så är våra bastusessioner på midsommar något du inte vill missa. Kom och upplev en dag och kväll fylld av ånga, avkoppling och välmående!
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="home.js"></script>
+</body>
+</html>

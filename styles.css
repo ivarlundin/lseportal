@@ -230,9 +230,7 @@ header {
 }
 
 /* Certificates */
-.certificates-showcase {
-    
-}
+
 .certificates-row  {
     background-image: url(./bookshelfv2.png);
     background-size: contain; /* Make the background image cover the entire container */
@@ -276,4 +274,28 @@ header {
 }
 .certificates-row .items .shelf {
     width: fit-content
+}
+
+/* news page */
+
+.news-banner {
+    padding: 32px 48px;
+    background-image: url(/news-banner.png);
+    background-size: cover; /* Make the background image cover the entire container */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-position: center top; /* Center the background image */
+
+    color: white;
+    text-shadow: 2px 2px 8px black;
+}
+.tag {
+    color: black;
+    font-size: 14px;
+    background-color: rgb(149, 195, 157);
+    padding: 3px 8px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.news-item.tile {
+    width: 550px;
+    padding: 48px;
 }
