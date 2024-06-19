@@ -117,5 +117,47 @@
         "fullname": "Alva Thorén",
         "avatarId": "20",
         "rank": "Master"
+    },
+    {
+        "username": "morinio",
+        "password": "3251",
+        "fullname": "Arvid Morino",
+        "avatarId": "21",
+        "rank": "Learner"
+    },
+    {
+        "username": "RandiKainz",
+        "password": "5122",
+        "fullname": "Benjamin Kainz",
+        "avatarId": "22",
+        "rank": "Learner"
+    },
+    {
+        "username": "aronsson",
+        "password": "3012",
+        "fullname": "Vidar Aronsson",
+        "avatarId": "23",
+        "rank": "Learner"
+    },
+    {
+        "username": "vinge",
+        "password": "4124",
+        "fullname": "Simon Vinge",
+        "avatarId": "24",
+        "rank": "Learner"
+    },
+    {
+        "username": "vahidBastu",
+        "password": "8394",
+        "fullname": "Vahid",
+        "avatarId": "25",
+        "rank": "Learner"
+    },
+    {
+        "username": "HH-brull",
+        "password": "3913",
+        "fullname": "Henrik Hoffman",
+        "avatarId": "26",
+        "rank": "Learner"
     }
 ]
