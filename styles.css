@@ -162,6 +162,8 @@ h1, h2, h3 {
 /* MODAL */
 
 /* Hide the modal by default */
+
+
 .modal {
     display: none;
     position: fixed;
@@ -170,6 +172,7 @@ h1, h2, h3 {
     transform: translate(-50%, -50%);
 
     width: 300px;
+    height: 600px;
 
     padding: 48px;
 
