@@ -13,15 +13,17 @@
         <div class="modal-content">
             <img style="width: 64px;"src="welcomelogo.png">
             <br>
+    
+            <h2>Välkommen till SaunaPortal!</h2>
+            <p>Snart är du inne i värmen! Vänligen välj ett alternativ nedan.</p>
             <br>
-            <h2>Welcome to Our Platform!</h2>
-            <p>Are you a new user or an existing member?</p>
-            
+            <button style="padding: 16px 24px"onclick="promptExistingUserData();">Jag har fått inbjudan</button>
             <br>
-            <button onclick="promptNewUserData();">New User</button>
-            <button onclick="promptExistingUserData();">Existing User</button>
             <br>
-            <p style="font-style: italic;"><span style="font-weight: bold; color: #984f13;">Note!</span> This plattform is built for desktop. If you are using mobile phone, use landscape mode.</p>
+            <a style="text-decoration: underline" onclick="promptNewUserData();">Skapa konto utan inbjudan</a>
+            <br>
+            <br>
+            <p style="font-size: 14px; font-style: italic;"><span style="font-weight: bold; color: #984f13;">OBS!</span> Denna plattformen är byggd för stationär dator. Om du använder mobil, använd landskapsläge..</p>
         </div>
     </div>
 
